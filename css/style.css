@@ -1,3 +1,8 @@
+body {
+    background: url("../img/dentist-stock-sm.jpeg") no-repeat fixed center;
+    background-size: cover;
+}
+
 
 /*-----------------Header Start---------------------*/
 /*
@@ -5,18 +10,17 @@ Header holds:
 IMG - Company Logo
 NAV - Navigation Links
 */
-
 /*Holds all header content*/
-.header-container {
+.header-container{
     display: flex;
-    border: 2px solid red;
     align-items: baseline;
+    /*border: 2px solid red;*/
 }
 
 /*Box that holds navLogo*/
 .header-logo-box {
     flex-basis: 30%;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 
 /*Nav Logo Image*/
@@ -31,7 +35,7 @@ NAV - Navigation Links
 .header-nav-container {
     flex-basis: 70%;
     text-align: center;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 
 /*(ul) Gives padding for highlighting and navigation functionality*/
@@ -50,9 +54,25 @@ NAV - Navigation Links
 }
 /*-----------------Header End---------------------*/
 
-
 /*-----------------Main Start---------------------*/
 
+
+/*Parent*/
+.main-intro {
+    display: flex;
+    border: 2px solid red;
+}
+/*Inside Main Intro >*/
+.main-content-box {
+    border: 1px solid blue;
+    flex-basis: auto;
+}
+
+/*Inside Main content box > */
+.main-content-pic {
+    width: 100%;
+    max-width: 700px;
+}
 
 
 
@@ -72,5 +92,6 @@ NAV - Navigation Links
         margin-right: 15px;
         margin-left: 15px;
     }
-    /*-----------------Header Start---------------------*/
+    /*-----------------Header End---------------------*/
+
 }
