@@ -1,115 +1,24 @@
-.bg-img {
-    background: url("../img/dentist-stock-lg.jpeg") no-repeat fixed center;
-    background-size: cover;
-}
-
-/*Main Container that holds all the content*/
-.content-container {
-    border: 2px solid red;
-}
-
-
-.header-container div, .nav-container div, .main-container div, .services-container div {
-    border: 2px solid green;
-}
-
-/*Holds the Logo, h1, h2 for title*/
 .header-container {
-    margin-top: 50px;
     display: flex;
-    justify-content: center;
+    border: 2px solid red;
+    justify-content: flex-start;
+}
+.nav-logo-box {
+    flex-basis: 250px;
 }
 
-/*Company logo*/
-.company-logo {
-    width: 250px;
-}
-
-.nav-container {
-    display: flex;
-}
-
-.main-container {
-    display: flex;
-    justify-content: center;
-}
-
-.img-box-image {
-    max-width: 665px;
-}
-
-.services-container {
-    margin-top: 25px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.services-box {
-    flex: 1;
-}
-
-.services-image {
+.nav-logo {
     width: 100%;
 }
 
-
-@media screen and (max-width: 665px){
-
+.navigation-box {
+    
+    border: 1px solid blue;
+    list-style: none;
+    padding: 0;
+    margin-right: 25px;
 }
-
-
-
-
-/*@media(min-width: 468px){*/
-    /*.container-1 {*/
-        /*display: flex;*/
-        /*!*align-items: flex-start;*!*/
-        /*!*align-items: flex-end;*!*/
-        /*!*align-items: center;*!*/
-        /*!*flex-direction: column;*!*/
-    /*}*/
-
-    /*.container-2 {*/
-        /*display: flex;*/
-
-        /*!*justify-content: flex-start;*!*/
-        /*!*justify-content: flex-end;*!*/
-        /*!*justify-content: center;*!*/
-        /*justify-content: space-between;*/
-    /*}*/
-/*}*/
-
-/*.container-3 {*/
-    /*display:flex;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: space-between;*/
-/*}*/
-
-
-
-/*.container-2-box {*/
-    /*flex-basis: 27%;*/
-/*}*/
-
-/*.container-3-box {*/
-    /*flex-basis: 12%;*/
-/*}*/
-
-
-/*.container-1 div, .container-2 div, .container-3 div {*/
-    /*border: 1px solid black;*/
-    /*padding: 10px;*/
-/*}*/
-
-/*.box-1 {*/
-    /*flex: 2;*/
-    /*order: 2;*/
-/*}*/
-/*.box-2 {*/
-    /*flex: 1;*/
-    /*order: 1;*/
-/*}*/
-/*.box-3 {*/
-    /*flex: 2;*/
-    /*order: 3;*/
-/*}*/
+.navigation-item {
+    display: inline;
+    margin-right: 25px;
+}
