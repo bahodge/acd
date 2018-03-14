@@ -1,24 +1,76 @@
+
+/*-----------------Header Start---------------------*/
+/*
+Header holds:
+IMG - Company Logo
+NAV - Navigation Links
+*/
+
+/*Holds all header content*/
 .header-container {
     display: flex;
     border: 2px solid red;
-    justify-content: flex-start;
-}
-.nav-logo-box {
-    flex-basis: 250px;
+    align-items: baseline;
 }
 
-.nav-logo {
-    width: 100%;
-}
-
-.navigation-box {
-    
+/*Box that holds navLogo*/
+.header-logo-box {
+    flex-basis: 30%;
     border: 1px solid blue;
-    list-style: none;
-    padding: 0;
-    margin-right: 25px;
 }
-.navigation-item {
-    display: inline;
-    margin-right: 25px;
+
+/*Nav Logo Image*/
+.header-logo {
+    max-width: 350px;
+    width: 100%;
+    min-width: 200px;
+    margin-bottom: -5px;
+}
+
+/*Allocates screen width for inner elements*/
+.header-nav-container {
+    flex-basis: 70%;
+    text-align: center;
+    border: 1px solid blue;
+}
+
+/*(ul) Gives padding for highlighting and navigation functionality*/
+.header-nav-box {
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 25px 0 0 0;
+    list-style: none;
+}
+
+/*Gives*/
+.header-nav-item {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+/*-----------------Header End---------------------*/
+
+
+/*-----------------Main Start---------------------*/
+
+
+
+
+
+/*Media Query for small -> xs screens*/
+@media screen and (max-width: 700px){
+    /*-----------------Header Start---------------------*/
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header-nav-container {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .header-nav-item {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    /*-----------------Header Start---------------------*/
 }
