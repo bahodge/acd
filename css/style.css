@@ -1,97 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 body {
-    background: url("../img/dentist-stock-sm.jpeg") no-repeat fixed center;
-    background-size: cover;
+    /*background: url("../img/dentist-stock-sm.jpeg") no-repeat fixed center;*/
+    /*background-size: cover;*/
+    font-family: 'Josefin Sans', sans-serif;
 }
 
+/*---------------------------Header Start---------------------------*/
 
-/*-----------------Header Start---------------------*/
-/*
-Header holds:
-IMG - Company Logo
-NAV - Navigation Links
-*/
-/*Holds all header content*/
-.header-container{
-    display: flex;
-    align-items: baseline;
-    /*border: 2px solid red;*/
+
+/************** Navigation *************/
+
+/*Brand Logo Sizing*/
+.brand-logo {
+    /*TODO make a custom mdeia query to handle margins*/
+    /*margin-left: 100px;*/
+    max-width: 75px;
 }
 
-/*Box that holds navLogo*/
-.header-logo-box {
-    flex-basis: 30%;
-    /*border: 1px solid blue;*/
+.navbar-text {
+    margin-top: 20px;
 }
 
-/*Nav Logo Image*/
-.header-logo {
-    max-width: 350px;
-    width: 100%;
-    min-width: 200px;
-    margin-bottom: -5px;
+/*Pushes navbar-right links left to make them more noticeable*/
+.navbar li {
+    margin-right: 50px;
+}
+/*---------------------------Header End---------------------------*/
+
+
+/*---------------------------Main Start---------------------------*/
+
+/************** ABOUT *************/
+main {
+    margin-top: 75px;
 }
 
-/*Allocates screen width for inner elements*/
-.header-nav-container {
-    flex-basis: 70%;
-    text-align: center;
-    /*border: 1px solid blue;*/
+.acs-smiles {
+    max-width: 250px;
 }
 
-/*(ul) Gives padding for highlighting and navigation functionality*/
-.header-nav-box {
-    margin-top: auto;
-    margin-bottom: 0;
-    padding: 25px 0 0 0;
-    list-style: none;
+/*TODO find a better seperator of sections for XS*/
+/*Placeholder color and solution until I find something better*/
+hr {
+    border-color: #1a3454;
+    border-top-width: 10px;
 }
 
-/*Gives*/
-.header-nav-item {
-    display: inline-block;
-    margin-right: 30px;
-    margin-left: 30px;
-}
-/*-----------------Header End---------------------*/
+/************** SERVICES *************/
 
-/*-----------------Main Start---------------------*/
-
-
-/*Parent*/
-.main-intro {
-    display: flex;
-    border: 2px solid red;
-}
-/*Inside Main Intro >*/
-.main-content-box {
-    border: 1px solid blue;
-    flex-basis: auto;
+.service-img {
+    margin-top: 10px;
 }
 
-/*Inside Main content box > */
-.main-content-pic {
-    width: 100%;
-    max-width: 700px;
+/************** SERVICES *************/
+label {
+    margin-top: 10px;
 }
 
-
-
-
-/*Media Query for small -> xs screens*/
-@media screen and (max-width: 700px){
-    /*-----------------Header Start---------------------*/
-    .header-container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .header-nav-container {
-        flex-basis: 100%;
-        text-align: center;
-    }
-    .header-nav-item {
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-    /*-----------------Header End---------------------*/
-
-}
+/*---------------------------Main End---------------------------*/

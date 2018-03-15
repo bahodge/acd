@@ -6,42 +6,146 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alamo City Dental</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="bg-img">
 
-
-<header class="header-container">
-    <div class="header-logo-box">
-        <img class="header-logo" src="./img/ACSLogoClear.png" alt="Alamo City Dental">
-    </div>
-    <nav class="header-nav-container">
-        <ul class="header-nav-box">
-            <li class="header-nav-item"><a href="#">Home</a></li>
-            <li class="header-nav-item"><a href="#">Services</a></li>
-            <li class="header-nav-item"><a href="#">Schedule Appointment</a></li>
-        </ul>
+<header class="header-section">
+<!--NAVIGATION START-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img class="brand-logo" src="./img/acslogo-blank-sm.png" alt="Alamo City Smiles"></a>
+                <p class="navbar-text">Alamo City Smiles</p>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Schedule</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
+<!--NAVIGATION END-->
 </header>
 
-<!--<main class="main-container">-->
-    <div class="sidebar-container">
-        <div class="main-title-box">
-            <h1 class="main-title">Alamo City Smiles</h1>
+<main class="container">
+    <!--ACS Logo-->
+    <div class="row">
+        <div class="col-xs-12">
+            <img class="center-block img-responsive acs-smiles" src="./img/acslogo-smile-sm.png" alt="Alamo City Smiles">
         </div>
     </div>
 
-    <section class="main-intro">
-        <div class="main-content-box">
-            <img class="main-content-pic" src="./img/doctors-port.png" alt="Doctors">
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <hr>
+        </div>
+    </div>
+
+    <!--ABOUT SECTION START-->
+    <section class="about">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h1>Alamo City Smiles</h1>
+                <p>Dr. Winston O. Miller and Dr. Ned D. Lunt have been in business together for over 25 years. We welcome Dr. Barton and know you will find his skills equal to this wonderful practice.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <img class="center-block img-responsive" src="./img/doctors-port.png" alt="Doctors">
+            </div>
+        </div>
+    </section>
+    <!--ABOUT SECTION END-->
+    <!--SOME SORT OF SEPARATOR-->
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <hr>
+        </div>
+    </div>
+
+
+    <!--SERVICES SECTION START-->
+    <section class="services">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>Services</h2>
+                <p>We offer a variety of services which range from routine checkups to catastrophic procedures.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <img class="service-img center-block img-responsive" src="./img/service-stock-sm.jpeg" alt="Service 1">
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <img class="service-img center-block img-responsive" src="./img/services-stock-tooth-sm.jpeg" alt="Service 2">
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <img class="service-img center-block img-responsive" src="./img/services-stock-child-sm.jpeg" alt="Service 3">
+            </div>
+        </div>
+    </section>
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <hr>
+        </div>
+    </div>
+
+
+    <!--SCHEDULE SECTION START-->
+    <section class="schedule">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>Schedule a Visit</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <form>
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" class="form-control" id="full-name" placeholder="Full Name">
+
+                        <label for="phone-number">Phone Number</label>
+                        <input type="text" class="form-control" id="phone-number" placeholder="Phone Number">
+
+                        <label for="email-address">Email address</label>
+                        <input type="email" class="form-control" id="email-address" placeholder="Email">
+                    </div>
+
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
         </div>
     </section>
 
-<!--</main>-->
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <hr>
+        </div>
+    </div>
+
+
+</main>
+
 
 
     <!--Scripts-->
-    <script src="./js/jquery-3.3.1.js"></script>
+<script src="./js/jquery-3.3.1.js"></script>
+<script src="./js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
