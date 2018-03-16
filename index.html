@@ -41,6 +41,11 @@
 <!--NAVIGATION END-->
 </header>
 
+
+
+
+
+
 <main class="container">
     <!--ACS Logo-->
     <div class="row">
@@ -78,6 +83,7 @@
     </div>
 
 
+
     <!--SERVICES SECTION START-->
     <section class="services">
         <div class="row">
@@ -104,33 +110,26 @@
         </div>
     </div>
 
-
-    <!--SCHEDULE SECTION START-->
     <section class="schedule">
         <div class="row">
             <div class="col-xs-12 text-center">
-                <h2>Schedule a Visit</h2>
+                <h2>Appointments</h2>
+                <p>Give us a call or send us an email to schedule your next visit.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12">
-                <form>
-                    <div class="form-group">
-                        <label for="full-name">Full Name</label>
-                        <input type="text" class="form-control" id="full-name" placeholder="Full Name">
-
-                        <label for="phone-number">Phone Number</label>
-                        <input type="text" class="form-control" id="phone-number" placeholder="Phone Number">
-
-                        <label for="email-address">Email address</label>
-                        <input type="email" class="form-control" id="email-address" placeholder="Email">
-                    </div>
-
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
+            <div class="col-xs-12 text-center">
+                <label for="phone-number">Phone: <span id="phone-number">999-999-9999</span></label>
+            </div>
+            <div class="col-xs-12 text-center">
+                <label for="email-address">Email: <span id="email-address">acs@acs.com</span></label>
+            </div>
+            <div class="col-xs-12 text-center">
+                <label for="physical-address">Address: <span id="physical-address">7272 Wurzbach #404 San Antonio Texas 78240</span></label>
             </div>
         </div>
     </section>
+
 
     <div class="row">
         <div class="col-xs-6 col-xs-offset-3">
@@ -138,7 +137,57 @@
         </div>
     </div>
 
+    <section>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>Our Staff</h2>
+            </div>
+        </div>
 
+        <!--TODO fix images so that they are all the same size and responsive. Perhaps make a carousel-->
+                <div class="row">
+                    <img class="col-xs-12 col-sm-3 img-responsive" src="./img/aurora.png" alt="Aurora">
+                    <img class="col-xs-12 col-sm-3 img-responsive" src="./img/bonette.png" alt="Bonette">
+                    <img class="col-xs-12 col-sm-3 img-responsive" src="./img/cindy.png" alt="Cindy">
+                    <img class="col-xs-12 col-sm-3 img-responsive" src="./img/debbie.png" alt="Debbie">
+                </div>
+                <div class="row">
+                    <img class="col-xs-12 col-sm-4 img-responsive" src="./img/gail.png" alt="Gail">
+                    <img class="col-xs-12 col-sm-4 img-responsive" src="./img/tori.png" alt="Tori">
+                    <img class="col-xs-12 col-sm-4 img-responsive" src="./img/jared.png" alt="Jared">
+                </div>
+
+    </section>
+
+
+    <!--TODO Hook form up to a backend that sends an email/notification to office-->
+    <!--SCHEDULE SECTION START-->
+    <!--<section class="schedule">-->
+        <!--<div class="row">-->
+            <!--<div class="col-xs-12 text-center">-->
+                <!--<h2>Schedule a Visit</h2>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+            <!--<div class="col-xs-12">-->
+         <!---->
+                <!--<form>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="full-name">Full Name</label>-->
+                        <!--<input type="text" class="form-control" id="full-name" placeholder="Full Name">-->
+
+                        <!--<label for="phone-number">Phone Number</label>-->
+                        <!--<input type="text" class="form-control" id="phone-number" placeholder="Phone Number">-->
+
+                        <!--<label for="email-address">Email address</label>-->
+                        <!--<input type="email" class="form-control" id="email-address" placeholder="Email">-->
+                    <!--</div>-->
+
+                    <!--<button type="submit" class="btn btn-default">Submit</button>-->
+                <!--</form>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
 </main>
 
 
