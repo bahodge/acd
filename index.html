@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alamo City Dental</title>
+    <title>Alamo City Smiles</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -22,6 +22,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#"><img class="brand-logo" src="./img/acslogo-blank-sm.png" alt="Alamo City Smiles"></a>
                 <p class="navbar-text">Alamo City Smiles</p>
@@ -31,7 +32,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Appointments</a></li>
+                    <li><a href="#">Staff</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                 </ul>
@@ -46,7 +48,7 @@
 
 
 
-<main class="container">
+<main class="container-fluid">
     <!--ACS Logo-->
     <div class="row">
         <div class="col-xs-12">
@@ -60,61 +62,85 @@
         </div>
     </div>
 
-    <!--ABOUT SECTION START-->
-    <section class="about">
+    <div class="spacer container">
         <div class="row">
             <div class="col-xs-12 text-center">
-                <h1>Alamo City Smiles</h1>
-                <p>Dr. Winston O. Miller and Dr. Ned D. Lunt have been in business together for over 25 years. We welcome Dr. Barton and know you will find his skills equal to this wonderful practice.</p>
+                <h2>About</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--ABOUT SECTION START-->
+    <section class="about container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <p class="section-description">Dr. Winston O. Miller and Dr. Ned D. Lunt have been in business together for over 25 years. We welcome Dr. Barton and know you will find his skills equal to this wonderful practice.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <img class="center-block img-responsive" src="./img/doctors-port.png" alt="Doctors">
+                <img class="center-block img-responsive img-rounded" src="./img/doctors-port.png" alt="Doctors">
             </div>
         </div>
     </section>
     <!--ABOUT SECTION END-->
 
-    <!--SOME SORT OF SEPARATOR-->
     <div class="row">
         <div class="col-xs-6 col-xs-offset-3">
             <hr>
+        </div>
+    </div>
+
+
+    <!--SPACER-->
+    <div class="spacer container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>Services</h2>
+            </div>
         </div>
     </div>
 
     <!--SERVICES SECTION-->
-    <section class="services">
+    <section class="services container">
         <div class="row">
             <div class="col-xs-12 text-center">
-                <h2>Services</h2>
-                <p>We offer a variety of services which range from routine checkups to catastrophic procedures.</p>
+                <p class="section-description">We offer a variety of services which range from routine checkups to catastrophic procedures.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-4">
-                <img class="service-img center-block img-responsive" src="./img/service-stock-sm.jpeg" alt="Service 1">
+                <img class="service-img center-block img-responsive img-rounded" src="./img/service-stock-sm.jpeg" alt="Service 1">
             </div>
             <div class="col-xs-12 col-sm-4">
-                <img class="service-img center-block img-responsive" src="./img/services-stock-tooth-sm.jpeg" alt="Service 2">
+                <img class="service-img center-block img-responsive img-rounded" src="./img/services-stock-tooth-sm.jpeg" alt="Service 2">
             </div>
             <div class="col-xs-12 col-sm-4">
-                <img class="service-img center-block img-responsive" src="./img/services-stock-child-sm.jpeg" alt="Service 3">
+                <img class="service-img center-block img-responsive img-rounded" src="./img/services-stock-child-sm.jpeg" alt="Service 3">
             </div>
         </div>
     </section>
+
+
     <div class="row">
         <div class="col-xs-6 col-xs-offset-3">
             <hr>
         </div>
     </div>
 
-    <!--SCHEDULE SECTION-->
-    <section class="schedule">
+    <div class="spacer container">
         <div class="row">
             <div class="col-xs-12 text-center">
                 <h2>Appointments</h2>
-                <p>Give us a call or send us an email to schedule your next visit.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--SCHEDULE SECTION-->
+    <section class="schedule container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <p class="section-description">Give us a call or send us an email to schedule your next visit.</p>
             </div>
         </div>
         <div class="row">
@@ -137,52 +163,61 @@
         </div>
     </div>
 
-    <!--STAFF SECTION-->
-    <section>
+    <div class="spacer container">
         <div class="row">
             <div class="col-xs-12 text-center">
-              <h2>Our Staff</h2>
+                <h2>Our Staff</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--TODO STAFF SHADOWS ARE MESSED UP! NEED TO FIX SOMEHOW. PADDING???-->
+    <!--STAFF SECTION-->
+    <section class="staff container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+              <p class="section-description">We are extremely fortunate to employ a smart, caring and driven team who strive each day to improve the services we provide to our valued patients.</p>
             </div>
         </div>
 
         <div class="hidden-sm hidden-md hidden-lg">
             <div class="row">
-                <div class="col-xs-12 backer">
-                    <img class="staff-pic img-responsive center-block" src="./img/jared.png" alt="Jared">
+                <div class="col-xs-12">
+                    <img class="staff-pic img-responsive img-rounded center-block" src="./img/jared.png" alt="Jared">
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 backer">
-                    <img class="staff-pic img-responsive center-block" src="./img/aurora.png" alt="Aurora">
+                <div class="col-xs-12">
+                    <img class="staff-pic img-responsive img-rounded center-block" src="./img/aurora.png" alt="Aurora">
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 backer">
-                    <img class="staff-pic img-responsive center-block" src="./img/bonette.png" alt="Bonette">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-12 backer">
-                    <img class="staff-pic img-responsive center-block" src="./img/debbie.png" alt="Debbie">
+                <div class="col-xs-12">
+                    <img class="staff-pic img-responsive img-rounded center-block" src="./img/bonette.png" alt="Bonette">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xs-12 backer">
-                    <img class="staff-pic img-responsive center-block" src="./img/gail.png" alt="Gail">
+                <div class="col-xs-12">
+                    <img class="staff-pic img-responsive img-rounded center-block" src="./img/debbie.png" alt="Debbie">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xs-12 backer">
-                    <img class="staff-pic img-responsive center-block" src="./img/tori.png" alt="Tori">
+                <div class="col-xs-12">
+                    <img class="staff-pic img-responsive img-rounded center-block" src="./img/gail.png" alt="Gail">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <img class="staff-pic img-responsive img-rounded center-block" src="./img/tori.png" alt="Tori">
                 </div>
             </div>
 
             <div class="row ">
                 <div class="col-xs-12 ">
-                    <img class="staff-pic img-responsive center-block" src="./img/cindy.png" alt="Cindy">
+                    <img class="staff-pic img-responsive img-rounded center-block" src="./img/cindy.png" alt="Cindy">
                 </div>
             </div>
 
@@ -190,57 +225,27 @@
         <div class="hidden-xs">
             <div class="row">
                 <div class="col-sm-12 center-block">
-                    <img class="col-sm-4 staff-pic img-responsive" src="./img/jared.png" alt="Jared">
-                    <img class="col-sm-4 staff-pic img-responsive" src="./img/aurora.png" alt="Aurora">
-                    <img class="col-sm-4 staff-pic img-responsive" src="./img/bonette.png" alt="Bonette">
+                    <img class="col-sm-4 staff-pic" src="./img/jared.png" alt="Jared">
+                    <img class="col-sm-4 staff-pic" src="./img/aurora.png" alt="Aurora">
+                    <img class="col-sm-4 staff-pic" src="./img/bonette.png" alt="Bonette">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 center-block">
-                    <img class="col-sm-4 staff-pic img-responsive" src="./img/debbie.png" alt="Debbie">
-                    <img class="col-sm-4 staff-pic img-responsive" src="./img/gail.png" alt="Gail">
-                    <img class="col-sm-4 staff-pic img-responsive" src="./img/tori.png" alt="Tori">
+                    <img class="col-sm-4 staff-pic" src="./img/debbie.png" alt="Debbie">
+                    <img class="col-sm-4 staff-pic" src="./img/gail.png" alt="Gail">
+                    <img class="col-sm-4 staff-pic" src="./img/tori.png" alt="Tori">
                 </div>
             </div>
 
             <div class="row ">
                 <div class="col-sm-12 center-block">
-                    <img class="col-sm-offset-4 col-sm-4 staff-pic img-responsive" src="./img/cindy.png" alt="Cindy">
+                    <img class="col-sm-offset-4 col-sm-4 staff-pic" src="./img/cindy.png" alt="Cindy">
                 </div>
             </div>
 
         </div>
     </section>
-
-
-    <!--TODO Hook form up to a backend that sends an email/notification to office-->
-    <!--SCHEDULE SECTION START-->
-    <!--<section class="schedule">-->
-        <!--<div class="row">-->
-            <!--<div class="col-xs-12 text-center">-->
-                <!--<h2>Schedule a Visit</h2>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="row">-->
-            <!--<div class="col-xs-12">-->
-         <!---->
-                <!--<form>-->
-                    <!--<div class="form-group">-->
-                        <!--<label for="full-name">Full Name</label>-->
-                        <!--<input type="text" class="form-control" id="full-name" placeholder="Full Name">-->
-
-                        <!--<label for="phone-number">Phone Number</label>-->
-                        <!--<input type="text" class="form-control" id="phone-number" placeholder="Phone Number">-->
-
-                        <!--<label for="email-address">Email address</label>-->
-                        <!--<input type="email" class="form-control" id="email-address" placeholder="Email">-->
-                    <!--</div>-->
-
-                    <!--<button type="submit" class="btn btn-default">Submit</button>-->
-                <!--</form>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</section>-->
 </main>
 
 
