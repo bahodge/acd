@@ -53,9 +53,18 @@ hr {
     margin-top: 10px;
 }
 
-/************** SERVICES *************/
+/************** Scheduling *************/
 label {
     margin-top: 10px;
 }
 
+/************** Staff *************/
+.staff-pic {
+    margin-top: 20px
+
+}
+
+.img-thumbnail {
+    margin: 5px;
+}
 /*---------------------------Main End---------------------------*/
