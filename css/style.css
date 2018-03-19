@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
+html {
+    scroll-behavior: smooth;
+
+}
+
+
 body {
     /*background: url("../img/dentist-stock-sm.jpeg") no-repeat fixed center;*/
     /*background-size: cover;*/
@@ -13,6 +19,7 @@ body {
 /************** Navigation *************/
 .navbar {
     border: transparent;
+    box-shadow: 3px 5px 10px #404d58;
 }
 
 
@@ -32,6 +39,10 @@ body {
 .navbar li {
     margin-right: 30px;
 }
+
+#about {
+
+}
 /*---------------------------Header End---------------------------*/
 
 
@@ -45,15 +56,16 @@ h2 {
     font-weight: bold;
 }
 
-hr {
-    max-width: 200px;
+p {
+    font-size: 1.3em;
 }
 
 img {
     margin-top: 10px;
     padding: 0;
-    box-shadow: 3px 3px 3px #404d58;
+    /*box-shadow: 5px 5px 8px #404d58;*/
 }
+
 
 .about,
 .services,
@@ -62,12 +74,17 @@ img {
     background-color: #3c577b;
     padding-bottom: 25px;
     color: #d0e2f3;
-    box-shadow: 3px 3px 3px #404d58;
+    box-shadow: 5px 5px 8px #404d58;
+}
+
+.panel-spacer {
+    margin: 50px;
+    width: 100%;
 }
 
 .spacer {
     background: #ecf4ff;
-    box-shadow: 3px 3px 3px #404d58;
+    box-shadow: 5px 5px 8px #404d58;
 }
 
 
@@ -78,19 +95,73 @@ img {
 /************** ABOUT *************/
 
 .acs-smiles {
-    max-width: 250px;
+    max-width: 55%;
     box-shadow: none;
-}
 
-/*TODO find a better seperator of sections for XS*/
-/*Placeholder color and solution until I find something better*/
-hr {
-    border-color: #1a3454;
-    border-top-width: 10px;
 }
 
 /************** SERVICES *************/
 
+
+.service-img {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.service-one:hover .service-img {
+    opacity: .2;
+}
+
+.service-one:hover .middle {
+    opacity: 1;
+}
+
+.service-two:hover .service-img {
+    opacity: .2;
+}
+
+.service-two:hover .middle {
+    opacity: 1;
+}
+
+
+.service-three:hover .service-img {
+    opacity: .2;
+}
+
+.service-three:hover .middle {
+    opacity: 1;
+}
+
+.service-list {
+    padding: 0;
+    list-style: none;
+    color: white;
+    font-size: 16px;
+}
+
+.service-text:hover{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #7398a0;
+}
+
+.service-text {
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -100,9 +171,17 @@ hr {
 
 /************** Staff *************/
 
+/*TODO put the photos on the panel*/
 .staff-pic {
     margin-top: 20px;
     box-shadow: 3px 3px 3px #404d58;
 }
 
 /*---------------------------Main End---------------------------*/
+
+
+@media screen and (min-width: 768px) {
+    .staff-pic {
+        box-shadow: none;
+    }
+}
